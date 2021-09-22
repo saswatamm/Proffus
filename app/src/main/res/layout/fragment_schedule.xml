@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/WeddingSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/italiana"
+            android:text="Wedding Schedule"
+            android:textColor="@color/black"
+            android:textSize="36sp" />
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="30dp">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <View
+                   android:layout_width="3dp"
+                   android:layout_height="120dp"
+                   android:background="#FF8A00"
+                   android:layout_marginLeft="16dp"
+                   android:layout_marginTop="20dp"/>
+               <View
+                   android:layout_width="16dp"
+                   android:layout_height="16dp"
+                   android:background="@drawable/completioncircle"
+                   android:layout_marginLeft="10dp"/>
+               <View
+                   android:layout_width="3dp"
+                   android:layout_height="120dp"
+                   android:background="#FF8A00"
+                   android:layout_marginLeft="16dp"
+                   android:layout_marginTop="0dp"/>
+           </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="227dp"
+            android:layout_height="239dp"
+            android:background="@drawable/scheduleboxes"
+            android:layout_below="@+id/WeddingSchedule"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mehendi"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/duniakita"
+                android:textSize="22sp"
+                android:textColor="#D81D46"
+                android:id="@+id/MehendiText"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/schedule_line"
+                android:id="@+id/line"
+                android:layout_below="@+id/MehendiText"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:src="@drawable/calender_schedule"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/calenderImage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/calenderImage"
+                android:text="16 September"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:textColor="#FF8A00"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_schedule"
+                android:layout_below="@+id/calenderImage"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/clockImage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/clockImage"
+                android:text="7.30 pm"
+                android:layout_below="@+id/calenderImage"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:textColor="#FF8A00"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:layout_below="@+id/clockImage"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/DetailsHeader"
+                android:fontFamily="@font/baloo_bhai"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DetailsHeader"
+                android:layout_marginLeft="10dp"
+                android:text="Fringila neque, lacus elementum, a, nisl. Elit elit quam sollicitudin trisque etiam volupatvitae"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="120dp"
+                    android:background="#FF8A00"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="-20dp"/>
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/completioncircle"
+                    android:layout_marginLeft="10dp"/>
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="150dp"
+                    android:background="#FF8A00"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="0dp"/>
+            </LinearLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="227dp"
+                android:layout_height="239dp"
+                android:background="@drawable/scheduleboxes"
+                android:layout_below="@+id/WeddingSchedule"
+                android:layout_marginLeft="30dp"
+                android:padding="5dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/RingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/duniakita"
+                    android:text="Ring Ceremony"
+                    android:textColor="#D81D46"
+                    android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/schedule_line"
+                    android:id="@+id/line1"
+                    android:layout_below="@+id/RingText"
+                    android:layout_marginTop="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:src="@drawable/calender_schedule"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/RingImage"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/RingImage"
+                    android:text="16 September"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textColor="#FF8A00"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time_schedule"
+                    android:layout_below="@+id/RingImage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/clockImage1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RingImage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/clockImage1"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center"
+                    android:text="8.30 pm"
+                    android:textColor="#FF8A00" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:layout_below="@+id/clockImage1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/DetailsHeader1"
+                    android:fontFamily="@font/baloo_bhai"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DetailsHeader1"
+                    android:text="Fringila neque, lacus elementum, a, nisl. Elit elit quam sollicitudin trisque etiam volupatvitae"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="12sp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="120dp"
+                    android:background="#FF8A00"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="-20dp"/>
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/completioncircle"
+                    android:layout_marginLeft="10dp"/>
+                <View
+
+                    android:layout_width="3dp"
+                    android:layout_height="146dp"
+                    android:background="#FF8A00"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="0dp"/>
+            </LinearLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="227dp"
+                android:layout_height="239dp"
+                android:background="@drawable/scheduleboxes"
+                android:layout_below="@+id/WeddingSchedule"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/VidaaiText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/duniakita"
+                    android:text="Vidaai"
+                    android:textColor="#D81D46"
+                    android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/schedule_line"
+                    android:id="@+id/line2"
+                    android:layout_below="@+id/VidaaiText"
+                    android:layout_marginTop="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:src="@drawable/calender_schedule"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/calenderImage1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/calenderImage1"
+                    android:text="16 September"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textColor="#FF8A00"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time_schedule"
+                    android:layout_below="@+id/calenderImage1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/clockImage2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calenderImage1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/clockImage2"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center"
+                    android:text="9.30 pm"
+                    android:textColor="#FF8A00" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:layout_below="@+id/clockImage2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/DetailsHeader2"
+                    android:fontFamily="@font/baloo_bhai"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DetailsHeader2"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Fringila neque, lacus elementum, a, nisl. Elit elit quam sollicitudin trisque etiam volupatvitae"
+                    android:textSize="12sp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:text="May all the blessing be with the couple  and live together forever!"
+            android:fontFamily="@font/duniakita"
+            android:textColor="#D81D46"
+            android:textSize="22sp"/>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</FrameLayout>

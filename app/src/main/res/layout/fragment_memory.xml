@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemoryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memories"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:fontFamily="@font/italiana"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/Memories_header"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relive the memories again and bring those memories back to life"
+        android:layout_below="@+id/Memories_header"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/Memories_desc"
+        android:layout_marginRight="50dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/Memories_desc"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/recyclerView"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/homepage" />
+
+            <TextView
+                android:id="@+id/WelcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/italiana"
+                android:text="Welcome\nto the wedding!"
+                android:textColor="@color/black"
+                android:textSize="36sp" />
+
+            <ImageView
+                android:id="@+id/heartsPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/WelcomeText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/hearts1" />
+
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/WelcomeText"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="-20dp"
+
+                android:layout_toStartOf="@+id/heartsPic"
+                android:src="@drawable/pic1" />
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WelcomeText"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="55dp"
+                android:layout_toEndOf="@+id/heartsPic"
+                android:src="@drawable/pic2" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/relative1"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="-155dp"
+            android:fontFamily="@font/duniakita"
+            android:text="Mayank"
+            android:textColor="#D81D46"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-155dp"
+            android:layout_marginRight="60dp"
+            android:fontFamily="@font/duniakita"
+            android:text="Vanshika"
+            android:textColor="#D81D46"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-155dp"
+            android:fontFamily="@font/duniakita"
+            android:text="Weds"
+            android:textColor="#D81D46"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-70dp"
+            android:fontFamily="@font/italiana"
+            android:text="Souls Bonding In"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:id="@+id/TimeCountdown"
+            android:layout_below="@+id/relative1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bonding_countdown"
+            android:elevation="3dp"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/days_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:text="210"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#FF8A00"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/days_count"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="DAYS"
+                        android:textColor="#D81D46"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/black" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/hours_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:text="17"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#FF8A00"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/days_count"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="HOURS"
+                        android:textColor="#D81D46"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/black" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/minutes_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:text="35"
+
+                        android:textColor="#FF8A00"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/days_count"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="MIN"
+                        android:textColor="#D81D46"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/black" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/seconds_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:text="19"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#FF8A00"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/days_count"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="SEC"
+                        android:textColor="#D81D46"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TogetherForever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TimeCountdown"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/italiana"
+            android:text="Together Forever"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/TogetherForever"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/bonding_countdown"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#D81D46"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="2"
+            app:sliderStartAutoCycle="true" />
+
+        <TextView
+            android:id="@+id/WeddingSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_slider"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/italiana"
+            android:text="Wedding Schedule"
+
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/WeddingSchedule"
+            android:text="VIEW ALL"
+            android:textColor="#FF8A00"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/image_slider"
+            android:fontFamily="@font/baloo_bhai"
+            android:textSize="14sp"/>
+
+        <!--  Card1 of mehendi -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeWeddingSchedule"
+            android:layout_below="@+id/WeddingSchedule">
+
+
+
+        <RelativeLayout
+            android:layout_width="147dp"
+            android:layout_height="250dp"
+            android:id="@+id/one"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:elevation="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bonding_countdown">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mask_group" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mehendi"
+                android:id="@+id/mehendiImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mehendi"
+                android:layout_below="@+id/mehendiImage"
+                android:id="@+id/MehendiText"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/duniakita"
+                android:textSize="22sp"
+                android:textColor="#D81D46"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/MehendiText"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/line1"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/calender"
+                android:layout_below="@+id/line1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/calenderIcon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/calenderIcon"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="16 September"
+                android:id="@+id/date"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/clockIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_below="@+id/calenderIcon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/time" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:layout_below="@+id/date"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/clockIcon"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="7.30 pm"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/time"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/downsidedradius">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/locationIcon"
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NAVIGATE\nTO VENUE"
+                    android:layout_toEndOf="@+id/locationIcon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="147dp"
+            android:layout_height="250dp"
+            android:layout_toEndOf="@+id/one"
+
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:elevation="5dp"
+            android:layout_marginLeft="20dp"
+
+
+            android:background="@drawable/bonding_countdown">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mask_group"
+                android:scaleType="fitXY"
+               />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wedding"
+                android:id="@+id/weddingImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Wedding"
+                android:layout_below="@+id/weddingImage"
+                android:fontFamily="@font/duniakita"
+                android:id="@+id/WeddingText"
+                android:textSize="22sp"
+                android:textColor="#D81D46"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                android:id="@+id/line2"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/WeddingText"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/calender"
+                android:layout_below="@+id/line2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/calenderIcon1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/calenderIcon1"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="19 September"
+                android:id="@+id/date1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/clockIcon1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_below="@+id/calenderIcon1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/time" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time1"
+                android:layout_below="@+id/date1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/clockIcon1"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="7.30 pm"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/time1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/downsidedradius">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/locationIcon1"
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NAVIGATE\nTO VENUE"
+                    android:layout_toEndOf="@+id/locationIcon1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/WeddingDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeWeddingSchedule"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/italiana"
+            android:text="Wedding Details"
+
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+        <!--Wedding Details Card1-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeWeddingDetails1"
+            android:layout_below="@+id/WeddingDetails">
+
+
+
+            <RelativeLayout
+                android:layout_width="147dp"
+                android:layout_height="250dp"
+                android:id="@+id/WeddingDetailsone"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bonding_countdown">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mask_group" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/caterer"
+                    android:id="@+id/caterer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caterer"
+                    android:layout_below="@+id/caterer"
+                    android:id="@+id/catererText"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/duniakita"
+                    android:textSize="22sp"
+                    android:textColor="#D81D46"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/catererText"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/line3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line3"
+                    android:id="@+id/catererDesc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Dish-licious Caterers"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textColor="@color/black"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/catererDesc"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/downsidedradius">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW MORE"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/baloo_bhai"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <!-- Second of Wedding Details-->
+            <RelativeLayout
+                android:layout_width="147dp"
+                android:layout_height="250dp"
+                android:layout_toEndOf="@+id/WeddingDetailsone"
+
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+
+
+                android:background="@drawable/bonding_countdown">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mask_group"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/decoration"
+                    android:id="@+id/decorationImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Decoration"
+                    android:layout_below="@+id/decorationImage"
+                    android:fontFamily="@font/duniakita"
+                    android:id="@+id/DecorationText"
+                    android:textSize="22sp"
+                    android:textColor="#D81D46"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:id="@+id/line4"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/DecorationText"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:text="Grand Garden Banquet Hall"
+                    android:id="@+id/decorationDetails"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/decorationDetails"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/downsidedradius">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW MORE"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/baloo_bhai"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--Wedding Details 2nd line-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeWeddingDetails2"
+            android:layout_below="@+id/relativeWeddingDetails1">
+
+
+
+            <RelativeLayout
+                android:layout_width="147dp"
+                android:layout_height="250dp"
+                android:id="@+id/WeddingDetailsthree"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bonding_countdown">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mask_group" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jewellary"
+                    android:id="@+id/jewellary"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caterer"
+                    android:layout_below="@+id/jewellary"
+                    android:id="@+id/jewellaryText"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/duniakita"
+                    android:textSize="22sp"
+                    android:textColor="#D81D46"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/jewellaryText"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/line5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line5"
+                    android:id="@+id/jewellaryDesc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tanishq"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textColor="@color/black"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/jewellaryDesc"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/downsidedradius">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW MORE"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/baloo_bhai"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <!-- fourth of Wedding Details-->
+            <RelativeLayout
+                android:layout_width="147dp"
+                android:layout_height="250dp"
+                android:layout_toEndOf="@+id/WeddingDetailsthree"
+
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+
+
+                android:background="@drawable/bonding_countdown">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mask_group"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/camera"
+                    android:id="@+id/cameraImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Photographers"
+                    android:layout_below="@+id/cameraImage"
+                    android:fontFamily="@font/duniakita"
+                    android:id="@+id/cameraText"
+                    android:textSize="22sp"
+                    android:textColor="#D81D46"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:id="@+id/line6"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/cameraText"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:text="PicXel Perfect"
+                    android:id="@+id/cameraDetails"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/cameraDetails"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/downsidedradius">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW MORE"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/baloo_bhai"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--Wedding Details 3rd line-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeWeddingDetails3"
+            android:layout_below="@+id/relativeWeddingDetails2">
+
+
+
+            <RelativeLayout
+                android:layout_width="147dp"
+                android:layout_height="250dp"
+                android:id="@+id/WeddingDetailsfive"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bonding_countdown">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mask_group" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/groom"
+                    android:id="@+id/groom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Groom's Wardrove"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/groom"
+                    android:id="@+id/groomText"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/duniakita"
+                    android:textSize="22sp"
+                    android:textColor="#D81D46"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/groomText"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/line7"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line7"
+                    android:id="@+id/groomDesc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Manyavar"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textColor="@color/black"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/groomDesc"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/downsidedradius">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW MORE"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/baloo_bhai"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <!-- fourth of Wedding Details-->
+            <RelativeLayout
+                android:layout_width="147dp"
+                android:layout_height="250dp"
+                android:layout_toEndOf="@+id/WeddingDetailsfive"
+
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+
+
+                android:background="@drawable/bonding_countdown">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mask_group"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bride"
+                    android:id="@+id/brideImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Bride's Wardrobe"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/brideImage"
+                    android:fontFamily="@font/duniakita"
+                    android:id="@+id/brideText"
+                    android:textSize="22sp"
+                    android:textColor="#D81D46"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:id="@+id/line8"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/brideText"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:text="Shatranj"
+                    android:id="@+id/brideDetails"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/brideDetails"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/downsidedradius">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW MORE"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/baloo_bhai"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
