@@ -1,20 +1,5 @@
 
 
-<div align="center">
-
-[![GitHub Actions Status](https://img.shields.io/github/workflow/status/saswatamm/Proffus-android/CI?label=CI&logo=github&style=flat-square)](https://github.com/EdricChan03/StudyBuddy-android/actions?query=workflow%3ACI)
-[![CodeFactor](https://www.codefactor.io/repository/github/edricchan03/studybuddy-android/badge?style=flat-square)](https://www.codefactor.io/repository/github/edricchan03/studybuddy-android)
-[![App license](https://img.shields.io/github/license/EdricChan03/StudyBuddy-android?style=flat-square)](https://github.com/EdricChan03/StudyBuddy-android/blob/master/LICENSE)
-[![Dependabot status](https://flat.badgen.net/dependabot/EdricChan03/StudyBuddy-android?icon=dependabot)](https://dependabot.com)
-
-</div>
-
-<div align="center">
-
-[![Latest app release](https://img.shields.io/github/v/release/EdricChan03/StudyBuddy-android?include_prereleases&sort=semver&style=flat-square)](https://github.com/EdricChan03/StudyBuddy-android/releases/latest)
-
-</div>
-
 ## About the app
 
 The purpose of this app is to organise marriages and provide marriage details to the invites.
